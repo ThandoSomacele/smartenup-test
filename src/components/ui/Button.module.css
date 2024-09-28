@@ -1,0 +1,36 @@
+button {
+  font-family: 'Ondo', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 22.12px;
+  /* background: var(--gradient-color); */
+  border: none;
+  background-image: var(--gradient-color);
+  padding: 1.6rem 2.6rem;
+  transform: skewX(-20deg);
+}
+
+button span {
+  display: inline-block;
+  transform: skewX(20deg);
+}
+
+button:hover {
+  background: var(--gradient-background);
+}
+
+.btn_outline {
+  border: 1px solid var(--gradient-color);
+  padding: 1px;
+  background-image: var(--gradient-color);
+}
+
+.btn_outline div {
+  background: var(--primary-color);
+  border: 1px solid transparent;
+  padding: 1.5rem 2.5rem;
+}
+
+.btn_outline > div:hover {
+  background: var(--gradient-background);
+}
