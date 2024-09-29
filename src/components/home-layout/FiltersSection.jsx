@@ -18,32 +18,32 @@ export default function FiltersSection() {
     {
       img: filter1,
       name: 'core philosophies',
-      gamer: { img: filterPro1, name: 'Cameron Williamson', brand: 'Gillette' },
+      gamer: { img: filterPro1, name: 'Cameron Williamson', company: 'Gillette' },
     },
     {
       img: filter2,
       name: 'core philosophies',
-      gamer: { img: filterPro2, name: 'Dianne Russell', brand: 'Louis Vuitton' },
+      gamer: { img: filterPro2, name: 'Dianne Russell', company: 'Louis Vuitton' },
     },
     {
       img: filter3,
       name: 'core philosophies',
-      gamer: { img: filterPro3, name: 'Jane Cooper', brand: 'MasterCard' },
+      gamer: { img: filterPro3, name: 'Jane Cooper', company: 'MasterCard' },
     },
     {
       img: filter4,
       name: 'core philosophies',
-      gamer: { img: filterPro4, name: 'Cody Fisher', brand: 'The Walt Disney Company' },
+      gamer: { img: filterPro4, name: 'Cody Fisher', company: 'The Walt Disney Company' },
     },
     {
       img: filter5,
       name: 'core philosophies',
-      gamer: { img: filterPro5, name: 'Wade Warren', brand: 'Gillette' },
+      gamer: { img: filterPro5, name: 'Wade Warren', company: 'Gillette' },
     },
     {
       img: filter6,
       name: 'core philosophies',
-      gamer: { img: filterPro6, name: 'Robert Fox', brand: "L'Oréal" },
+      gamer: { img: filterPro6, name: 'Robert Fox', company: "L'Oréal" },
     },
   ];
 
@@ -71,9 +71,9 @@ export default function FiltersSection() {
             {/* --- Gamer Profile --- */}
             <div className='flex gap-x-3 items-center'>
               <img src={filter.gamer.img} className='object-contain' />
-              <div className='leading-normal'>
+              <div className='leading-relaxed'>
                 <p>{filter.gamer.name}</p>
-                <p className='text-[10px]'>{filter.gamer.brand}</p>
+                <p className='text-[10px]'>{filter.gamer.company}</p>
               </div>
             </div>
             <Button className={'py-[1rem]'} btnStyle='fill' btnText='Live Demo' />
