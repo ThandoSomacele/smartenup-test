@@ -63,10 +63,11 @@ export default function FiltersSection() {
       <div className='cards flex gap-x-5 gap-y-10 flex-wrap justify-center text-left'>
         {/* --- Filter Cards --- */}
         {filters.map((filter, i) => (
-          <div key={i} className='flex flex-col gap-5'>
+          <div
+            key={i}
+            className='flex flex-col gap-5 border card-shadow p-5 rounded-lg shadow-[0px 4px 20px -1px #000]'>
             <img src={filter.img} alt={`${filter.name} filter image`} />
             <h3 className='title capitalize'>{filter.name}</h3>
-
             {/* --- Gamer Profile --- */}
             <div className='flex gap-x-3 items-center'>
               <img src={filter.gamer.img} className='object-contain' />
@@ -75,6 +76,7 @@ export default function FiltersSection() {
                 <p className='text-[10px]'>{filter.gamer.brand}</p>
               </div>
             </div>
+            <Button className={'py-[1rem]'} btnStyle='fill' btnText='Live Demo' />
           </div>
         ))}
       </div>
