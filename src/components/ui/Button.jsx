@@ -14,9 +14,7 @@ export default function Button({ className, btnStyle = 'fill', btnText = 'This B
   if (btnStyle === 'outline') {
     return (
       <button className='btn btn-outline'>
-        <div>
-          <span className='btn-text'>{btnText}</span>
-        </div>
+        <span className='btn-text gradient-text'>{btnText}</span>
       </button>
     );
   }

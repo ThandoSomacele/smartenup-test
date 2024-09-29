@@ -39,15 +39,14 @@
     padding: 1.6rem 3.9rem;
   }
   .btn {
-    @apply uppercase font-extrabold leading-[22.12px] border border-transparent btn-padding skew-x-[-20deg]
-    /* font-family: 'Ondo', Arial, sans-serif; */;
+    @apply uppercase font-extrabold leading-[22.12px] btn-padding skew-x-[-20deg] hover:bg-gradient-to-r hover:to-slate-700 hover:from-gray-950;
   }
 
   .btn-fill {
-    @apply bg-[blue] hover:bg-[green];
+    @apply gradient-bg;
   }
   .btn-outline {
-    @apply bg-[red] hover:bg-[green];
+    @apply border gradient-border hover:bg-red-500;
   }
 
   .btn-text {
@@ -82,8 +81,16 @@
     line-height: 31.03px;
     font-weight: 800;
   }
+
+  .gradient-border {
+    border-image-slice: 1;
+    border-image-source: var(--gradient-color);
+  }
+  .gradient-bg {
+    background-image: var(--gradient-color);
+  }
   .gradient-text {
-    @apply bg-[orange] bg-clip-text text-transparent;
+    @apply gradient-bg bg-clip-text text-transparent;
   }
 
   .title {
