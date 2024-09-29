@@ -1,22 +1,23 @@
 /* eslint-disable react/prop-types */
-import styles from './Button.module.css';
 
 export default function Button({ btnStyle = 'fill', btnText = 'This Button' }) {
   // Fill Button
-  if (btnStyle === 'fill')
+  if (btnStyle === 'fill') {
     return (
-      <button>
-        <span>{btnText}</span>
+      <button className='btn btn-fill'>
+        <span className='btn-text'>{btnText}</span>
       </button>
     );
+  }
 
   // Outline Button
-  if (btnStyle === 'outline')
+  if (btnStyle === 'outline') {
     return (
-      <button className={styles.btn_outline}>
+      <button className='btn btn-outline'>
         <div>
-          <span>{btnText}</span>
+          <span className='btn-text'>{btnText}</span>
         </div>
       </button>
     );
+  }
 }

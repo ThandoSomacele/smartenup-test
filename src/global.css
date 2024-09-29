@@ -3,7 +3,21 @@
   src: local('OndoBoldRegular'), url('./assets/fonts/Ondo/FONTSPRINGDEMO-OndoBoldRegular.ttf');
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
+  --primary-color: #2d1e6b;
+  --gradient-color: linear-gradient(
+    90deg,
+    rgba(101, 66, 244, 1) 43.84%,
+    rgba(249, 118, 255, 1) 68.39%,
+    rgba(181, 0, 152, 1) 91.97%
+  );
+
+  --btn-padding: 1.6rem 3.9rem;
+
   font-family: 'Lato', Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -16,21 +30,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --primary-color: #2d1e6b;
-  --gradient-background: rgb(101, 66, 244);
-  --gradient-color: linear-gradient(
-    90deg,
-    rgba(101, 66, 244, 1) 43.84%,
-    rgba(249, 118, 255, 1) 68.39%,
-    rgba(181, 0, 152, 1) 91.97%
-  );
 }
-
 body {
   margin: 0;
-  /* display: flex; */
-  /* place-items: center; */
   font-size: 18.72px;
   font-weight: 400;
   line-height: 34.64px;
@@ -56,28 +58,36 @@ h2,
 .h2 {
   font-size: 30px;
   line-height: 33.18px;
+  font-weight: 800;
 }
 
 h3,
 .h3 {
   font-size: 28.06px;
   line-height: 31.03px;
+  font-weight: 800;
 }
 
-.gradient-text {
-  background: var(--gradient-color);
-  background-clip: text;
-  color: transparent;
+@layer components {
+  .btn {
+    @apply font-extrabold leading-[22.12px] border border-transparent p-[var(--btn-padding)] skew-x-[-15deg]
+    /* font-family: 'Ondo', Arial, sans-serif; */;
+  }
+
+  .btn-fill {
+    @apply bg-[blue] hover:bg-[green];
+  }
+  .btn-outline {
+    @apply bg-[red] hover:bg-[green];
+  }
 }
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-[orange] bg-clip-text text-transparent;
   }
-  a:hover {
-    color: #747bff;
+
+  .btn-text {
+    @apply inline-block skew-x-[15deg] text-[20px] font-extrabold;
   }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+}
