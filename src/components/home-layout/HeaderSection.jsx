@@ -1,4 +1,4 @@
-import Button from '../components/ui/Button';
+import Button from '../ui/Button';
 
 export default function HeaderSection() {
   const records = [
@@ -8,9 +8,9 @@ export default function HeaderSection() {
   ];
 
   return (
-    <div className='h-[100vh] w-full bg-[url("/main-images/home-hero.png")] lg:bg-cover bg- mix-blend-color-dodge flex items-center justify-start bg-[100% 10%] bg-no-repeat'>
+    <header className='h-[100vh] w-full bg-[url("/main-images/home-hero.png")] lg:bg-cover bg- mix-blend-color-dodge flex items-center justify-start bg-[100% 10%] bg-no-repeat'>
       <div className='container flex flex-col gap-5 flex-wrap'>
-        <h1 className='w-full lg:w-1/2'>
+        <h1 className='h1 w-full lg:w-1/2'>
           Let your mind&nbsp;<span className='gradient-text'>explore</span> new world
         </h1>
         <p className='w-full lg:w-1/2'>
@@ -24,12 +24,16 @@ export default function HeaderSection() {
         <div className='flex gap-8 mt-12 justify-start'>
           {records.map(record => (
             <div key={record.title} className='text-center'>
-              <p className='h2'>{record.number}</p>
+              {record.number.includes('200') ? (
+                <p className='h2 gradient-text'>{record.number}</p>
+              ) : (
+                <p className='h2'>{record.number}</p>
+              )}
               <p>{record.title}</p>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </header>
   );
 }

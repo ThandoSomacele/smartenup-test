@@ -35,42 +35,47 @@ body {
   margin: 0;
   font-size: 18.72px;
   font-weight: 400;
-  line-height: 34.64px;
+  line-height: 30px;
   letter-spacing: 0.04em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   font-family: 'Ondo', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 800;
 }
 
-h1 {
+.h1 {
   font-size: 68.94px;
   line-height: 76.24px;
 }
 
-h2,
 .h2 {
   font-size: 30px;
   line-height: 33.18px;
   font-weight: 800;
 }
 
-h3,
 .h3 {
   font-size: 28.06px;
   line-height: 31.03px;
   font-weight: 800;
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.54px;
+  letter-spacing: 0.035em;
+}
+
 @layer components {
   .btn {
-    @apply font-extrabold leading-[22.12px] border border-transparent p-[var(--btn-padding)] skew-x-[-15deg]
+    @apply uppercase font-extrabold leading-[22.12px] border border-transparent p-[var(--btn-padding)] skew-x-[-15deg]
     /* font-family: 'Ondo', Arial, sans-serif; */;
   }
 
