@@ -1,4 +1,5 @@
 import Button from '../ui/Button';
+import NavBar from './NavBar';
 
 export default function HeaderSection() {
   const records = [
@@ -8,8 +9,9 @@ export default function HeaderSection() {
   ];
 
   return (
-    <header className='h-[90vh] max-h-[1300px] w-full bg-[url("/main-images/home-hero.png")] lg:bg-cover mix-blend-color-dodge flex items-center justify-start bg-[100% 10%] bg-no-repeat'>
-      <div className='container flex flex-col gap-5 flex-wrap'>
+    <header className='bg-[url("/main-images/home-hero.png")] lg:bg-cover mix-blend-color-dodge bg-[100% 10%] bg-no-repeat'>
+      <NavBar />
+      <div className='container flex flex-col gap-5 flex-wrap h-[90vh] max-h-[1300px] items-start justify-center'>
         <h1 className='h1 w-full lg:w-1/2'>
           Let your mind&nbsp;<span className='gradient-text'>explore</span> new world
         </h1>
