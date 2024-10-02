@@ -9,9 +9,9 @@ export default function HeaderSection() {
   ];
 
   return (
-    <header className='bg-[url("/asset-images/home-hero.png")] lg:bg-cover mix-blend-color-dodge bg-[100% 10%] bg-no-repeat'>
+    <header className='bg-[url("/asset-images/home-hero.png")] lg:bg-cover mix-blend-color-dodge bg-no-repeat'>
       <NavBar />
-      <div className='container flex flex-col gap-5 flex-wrap h-[90vh] max-h-[1300px] items-start justify-center'>
+      <div className='container flex flex-col gap-5 flex-wrap h-[90vh] max-h-[1000px] items-start justify-center'>
         <h1 className='h1 w-full lg:w-1/2'>
           Let your mind&nbsp;<span className='gradient-text'>explore</span> new world
         </h1>

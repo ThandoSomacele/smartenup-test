@@ -13,12 +13,7 @@
 
 :root {
   --primary-color: #2d1e6b;
-  --gradient-color: linear-gradient(
-    90deg,
-    rgba(101, 66, 244, 1) 43.84%,
-    rgba(249, 118, 255, 1) 68.39%,
-    rgba(181, 0, 152, 1) 91.97%
-  );
+  --gradient-color: linear-gradient(90deg, #6542f4 11.84%, #f976ff 51.56%, #b50098 86.46%);
 }
 
 @layer base {

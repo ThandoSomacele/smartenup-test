@@ -6,7 +6,7 @@ export default function FeaturesStrip({ isTilted, isGrainy }) {
 
   if (isGrainy && isTilted)
     return (
-      <div className='relative overflow-x-clip -mt-[1.5%] '>
+      <div className='relative overflow-x-clip -mt-[1.5%]'>
         {/* --- Tilted Version --- */}
         <span className='flex gap-x-16 w-[200%] -skew-y-2 p-6 backdrop-blur-[5px] before:grainy-bg'>
           {features.map((feature, i) => (

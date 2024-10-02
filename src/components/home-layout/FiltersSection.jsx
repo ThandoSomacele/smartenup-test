@@ -65,7 +65,7 @@ export default function FiltersSection() {
         {filters.map((filter, i) => (
           <div
             key={i}
-            className='flex flex-col gap-5 border card-shadow p-5 rounded-lg shadow-[0px 4px 20px -1px #000]'>
+            className='flex flex-col gap-5 border border-white border-opacity-20 p-5 pb-[63px] rounded-[10px] bg-[url("/asset-images/card-grainy-bg.png")] bg-no-repeat bg-cover '>
             <img src={filter.img} alt={`${filter.name} filter image`} />
             <h3 className='title capitalize'>{filter.name}</h3>
             {/* --- Gamer Profile --- */}
