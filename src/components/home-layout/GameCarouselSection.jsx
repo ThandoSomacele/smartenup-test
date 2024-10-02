@@ -7,7 +7,7 @@ export default function GameCarouselSection() {
   const games = [gameImg1, gameImg2, gameImg3];
 
   return (
-    <div className='container flex items-center flex-col text-center py-24 gap-16'>
+    <div className='container flex items-center flex-col text-center pt-32 pb-24 gap-16'>
       <div className='w-3/5 flex items-center flex-col gap-4'>
         <h2 className='h1 '>
           Choose Your <span className='gradient-text'>Favorite</span> Games

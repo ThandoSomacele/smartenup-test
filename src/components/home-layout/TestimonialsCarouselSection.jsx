@@ -21,7 +21,7 @@ export default function TestimonialsCarouselSection() {
   ];
 
   return (
-    <div className='container py-10'>
+    <div className='container py-20'>
       <div className='testimonials flex gap-x-8'>
         {testimonials.map((testimonial, i) => (
           <div key={i} className='flex flex-col gap-5 rounded-lg border p-12 relative'>
