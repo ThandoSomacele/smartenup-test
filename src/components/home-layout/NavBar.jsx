@@ -25,7 +25,7 @@ export default function NavBar() {
     <nav className='container flex items-start lg:items-center justify-between w-full py-10 relative'>
       {/* --- Logo --- */}
       <a href={'/'}>
-        <img src='/main-images/logo.svg' width='150' height='34' alt='snap logo' className='object-contain' />
+        <img src='/asset-images/logo.svg' width='150' height='34' alt='snap logo' className='object-contain' />
       </a>
 
       {/* --- Navigation Items/Links --- */}

@@ -1,4 +1,4 @@
-import logo from '/main-images/logo.svg';
+import logo from '/asset-images/logo.svg';
 
 export default function FooterSection() {
   const footerColumnLinks = [
@@ -29,7 +29,7 @@ export default function FooterSection() {
   ];
 
   return (
-    <div className='bg-[url("/main-images/footer-bg.png")] w-full bg-cover bg-no-repeat mix-blend-color-dodge'>
+    <div className='bg-[url("/asset-images/footer-bg.png")] w-full bg-cover bg-no-repeat mix-blend-color-dodge'>
       <footer className='container flex flex-wrap pt-36 pb-10 w-full justify-start gap-20 '>
         <div className='flex flex-col w-1/4 space-y-10'>
           <img src={logo} width={195} height={45} className='contain' />
