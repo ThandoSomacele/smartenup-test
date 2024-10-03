@@ -6,12 +6,18 @@ export default function FeaturesStrip({ isTilted, isGrainy }) {
 
   if (isGrainy && isTilted)
     return (
-      <div className='relative overflow-x-clip -mt-[1.5%]'>
+      <div className='relative overflow-x-clip -mt-[8%] lg:-mt-[1.5%]'>
         {/* --- Tilted Version --- */}
-        <span className='flex gap-x-16 w-[200%] -skew-y-2 p-6 backdrop-blur-[5px] before:grainy-bg'>
+        <span className='flex lg:gap-x-16 lg:w-[200%] -skew-y-2 p-6 backdrop-blur-[5px] before:grainy-bg sliding-skewed-element'>
           {features.map((feature, i) => (
-            <span key={i} className='flex gap-x-5 text-3xl uppercase font-extrabold'>
-              <img src={starIcon} width={36} height={36} alt='Star icon' />
+            <span key={i} className='flex lg:gap-x-5 text-sm lg:text-3xl uppercase font-extrabold'>
+              <img src={starIcon} width={36} height={36} alt='Star icon' className='w-5 lg:w-auto object-contain' />
+              {feature}
+            </span>
+          ))}
+          {features.map((feature, i) => (
+            <span key={i} className='flex lg:gap-x-5 text-sm lg:text-3xl uppercase font-extrabold'>
+              <img src={starIcon} width={36} height={36} alt='Star icon' className='w-5 lg:w-auto object-contain' />
               {feature}
             </span>
           ))}
@@ -21,16 +27,24 @@ export default function FeaturesStrip({ isTilted, isGrainy }) {
 
   if (!isGrainy && !isTilted)
     return (
-      <div className='relative overflow-x-clip'>
-        {/* --- Tilted Version --- */}
-        <span className='flex gap-x-16 w-[200%] p-6'>
-          {features.map((feature, i) => (
-            <span key={i} className='flex gap-x-5 text-3xl uppercase font-extrabold'>
-              <img src={starIcon} width={36} height={36} alt='Star icon' />
-              {feature}
-            </span>
-          ))}
-        </span>
+      <div className='sliding-container'>
+        <div className='relative overflow-x-clip'>
+          {/* --- Tilted Version --- */}
+          <span className='flex lg:gap-x-16 lg:w-[200%] p-6 sliding-element'>
+            {features.map((feature, i) => (
+              <span key={i} className='flex lg:gap-x-5 text-sm lg:text-3xl uppercase font-extrabold'>
+                <img src={starIcon} width={36} height={36} alt='Star icon' className='w-5 lg:w-auto object-contain' />
+                {feature}
+              </span>
+            ))}
+            {features.map((feature, i) => (
+              <span key={i} className='flex lg:gap-x-5 text-sm lg:text-3xl uppercase font-extrabold'>
+                <img src={starIcon} width={36} height={36} alt='Star icon' className='w-5 lg:w-auto object-contain' />
+                {feature}
+              </span>
+            ))}
+          </span>
+        </div>
       </div>
     );
 
@@ -38,10 +52,16 @@ export default function FeaturesStrip({ isTilted, isGrainy }) {
     return (
       <div className='relative overflow-x-clip -mb-[1%]'>
         {/* --- Tilted Version --- */}
-        <span className='flex gap-x-16 w-[200%] p-6 backdrop-blur-[5px] before:grainy-bg'>
+        <span className='flex lg:gap-x-16 lg:w-[200%] p-6 backdrop-blur-[5px] before:grainy-bg sliding-element'>
           {features.map((feature, i) => (
-            <span key={i} className='flex gap-x-5 text-3xl uppercase font-extrabold'>
-              <img src={starIcon} width={36} height={36} alt='Star icon' />
+            <span key={i} className='flex lg:gap-x-5 text-sm lg:text-3xl uppercase font-extrabold'>
+              <img src={starIcon} width={36} height={36} alt='Star icon' className='w-5 lg:w-auto object-contain' />
+              {feature}
+            </span>
+          ))}
+          {features.map((feature, i) => (
+            <span key={i} className='flex lg:gap-x-5 text-sm lg:text-3xl uppercase font-extrabold'>
+              <img src={starIcon} width={36} height={36} alt='Star icon' className='w-5 lg:w-auto object-contain' />
               {feature}
             </span>
           ))}

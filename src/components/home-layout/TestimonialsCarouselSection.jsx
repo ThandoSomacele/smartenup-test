@@ -22,26 +22,31 @@ export default function TestimonialsCarouselSection() {
 
   return (
     <div className='container py-20'>
-      <div className='testimonials flex gap-x-8'>
+      <div className='testimonials flex gap-8 flex-wrap lg:flex-nowrap'>
         {testimonials.map((testimonial, i) => (
-          <div key={i} className='flex flex-col gap-5 rounded-lg border p-12 relative'>
-            <img src={bookmarIcons} className='w-[100.25px] absolute -top-[13%] right-[5%]' />
+          <div
+            key={i}
+            className='flex flex-col gap-5 rounded-lg p-6 py-10 lg:p-12 relative border border-white border-opacity-20'>
+            <img
+              src={bookmarIcons}
+              className='w-[60px] lg:w-[100.25px] absolute -top-[4.5%] lg:-top-[13%] right-[5%]'
+            />
             <div className='space-y-2'>
-              <div className='flex gap-1'>
+              <div className='flex gap-1 justify-center lg:justify-start'>
                 <img src={starPlainIcon} alt='plain star icon' />
                 <img src={starPlainIcon} alt='plain star icon' />
                 <img src={starPlainIcon} alt='plain star icon' />
                 <img src={starPlainIcon} alt='plain star icon' />
                 <img src={starPlainIcon} alt='plain star icon' />
               </div>
-              <p className='text-[16px]'>{testimonial.text}</p>
+              <p className='text-[16px] text-center lg:text-left'>{testimonial.text}</p>
             </div>
-            <hr />
+            <hr className='border-t gradient-white-border' />
             <div className='flex justify-between'>
               <div className='flex gap-x-3 items-center'>
                 <img src={testimonial.img} className='w-[60px] object-contain' />
                 <div className='leading-relaxed'>
-                  <p>{testimonial.name}</p>
+                  <p className='text-[17px]'>{testimonial.name}</p>
                   <p className='text-[10px]'>{testimonial.company}</p>
                 </div>
               </div>

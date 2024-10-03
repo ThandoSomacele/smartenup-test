@@ -9,21 +9,21 @@ export default function HeaderSection() {
   ];
 
   return (
-    <header className='bg-[url("/asset-images/home-hero.png")] lg:bg-cover mix-blend-color-dodge bg-no-repeat'>
+    <header className='hero-bg-lg hero-bg-sm'>
       <NavBar />
-      <div className='container flex flex-col gap-5 flex-wrap h-[90vh] max-h-[1000px] items-start justify-center'>
+      <div className='container flex flex-col gap-5 h-[90vh] max-h-[720px] md:max-h-[1000px] items-start lg:justify-center'>
         <h1 className='h1 w-full lg:w-1/2'>
           Let your mind&nbsp;<span className='gradient-text'>explore</span> new world
         </h1>
-        <p className='w-full lg:w-1/2'>
+        <p className='w-full lg:w-1/2 text-sm lg:text-lg'>
           Playing electronic games, whether through consoles, computers, mobile&nbsp;phones or another medium
           altogether. Gaming is a nuanced term&nbsp;that suggests regular gameplay, possibly as a hobby.
         </p>
-        <div className='flex gap-5'>
+        <div className='lg:flex gap-5 hidden'>
           <Button btnStyle='fill' btnText='Buy Now' />
           <Button btnStyle='outline' btnText='Play Now' />
         </div>
-        <div className='flex gap-8 mt-12 justify-start'>
+        <div className='lg:flex gap-8 mt-12 justify-start hidden'>
           {records.map(record => (
             <div key={record.title} className='text-center'>
               {record.number.includes('200') ? (

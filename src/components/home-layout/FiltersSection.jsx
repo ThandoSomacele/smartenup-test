@@ -48,13 +48,13 @@ export default function FiltersSection() {
   ];
 
   return (
-    <div className='container flex items-center flex-col text-center pb-24 gap-16'>
-      <div className='w-3/5 flex items-center flex-col gap-4'>
+    <div className='container flex items-center flex-col text-center pb-24 gap-16 overflow-x-hidden'>
+      <div className='lg:w-3/5 flex items-center flex-col gap-4'>
         <h2 className='h1'>
           Welcome to the top <span className='gradient-text'>games</span>
         </h2>
       </div>
-      <div className='flex gap-5'>
+      <div className='flex gap-5 self-start lg:self-center'>
         <Button btnStyle='fill' btnText='Newest Games' />
         <Button btnStyle='outline' btnText='Latest Games' />
         <Button btnStyle='outline' btnText='Fight Games' />

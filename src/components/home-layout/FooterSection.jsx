@@ -31,7 +31,7 @@ export default function FooterSection() {
   return (
     <div className='bg-[url("/asset-images/footer-bg.png")] w-full bg-cover bg-no-repeat mix-blend-color-dodge'>
       <footer className='container flex flex-wrap pt-36 pb-10 w-full justify-start gap-20 '>
-        <div className='flex flex-col w-1/4 space-y-10'>
+        <div className='flex flex-col lg:w-1/4 space-y-10'>
           <img src={logo} width={195} height={45} className='contain' />
           <p className='text-base'>
             A well-designed gaming header often incorporates elements such as game characters, iconic symbols, vibrant

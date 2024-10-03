@@ -29,7 +29,7 @@ export default function NavBar() {
       </a>
 
       {/* --- Navigation Items/Links --- */}
-      <ul className='flex flex-col md:flex-row gap-10 bg-[red] lg:bg-transparent absolute lg:relative top-[10vh] lg:top-0 w-2/3 justify-center items-center right-0 py-10 lg:py-0'>
+      <ul className='hidden lg:flex flex-col md:flex-row gap-10 lg:bg-transparent absolute lg:relative top-[10vh] lg:top-0 w-2/3 justify-center items-center right-0 py-10 lg:py-0'>
         {/* --- Close Menu Icon --- */}
         <img src={closeIcon} width='32' height='32' className='' />
         {navItems.map((item, i) => (
