@@ -18,7 +18,7 @@ export default function GameCarouselSection() {
 
   return (
     <div className='flex items-center flex-col text-center pt-10 lg:pt-32 pb-24 gap-16 p-'>
-      <div className='lg:w-[50%] flex items-center flex-col gap-4 md:px-16 lg:px-24'>
+      <div className='lg:w-[52%] flex items-center flex-col gap-4 md:px-16 lg:px-24'>
         <div className='flex lg:hidden gap-5 '>
           <Button btnStyle='fill' btnText='Buy Now' />
           <Button btnStyle='outline' btnText='Play Now' />
@@ -35,10 +35,10 @@ export default function GameCarouselSection() {
             </div>
           ))}
         </div>
-        <h2 className='h1 '>
-          Choose Your <span className='gradient-text'>Favorite</span> Games
+        <h2 className='h1'>
+          Choose Your <span className='gradient-text'>Favorite</span>&nbsp;Games
         </h2>
-        <p className='w-4/5'>
+        <p>
           Offer sneak peeks and previews of upcoming games, including trailers, screenshots, and information about
           release.
         </p>
